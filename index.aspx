@@ -116,10 +116,11 @@
                 <div class="home-content__buttons">
                        <asp:ImageButton ID="imgFaceBook" AlternateText="login" ImageUrl="~/img/fbLogin.jpg"
             runat="server" OnClick="ShareImage"></asp:ImageButton>
-                   
+                    
                     <!--<a href="#about" class="smoothscroll btn btn--stroke">
                         More About Us
                     </a>-->
+                    <asp:Button ID="Button2" runat="server" Text="Button" OnClick="Button2_Click" />
                 </div>
 
             </div>
