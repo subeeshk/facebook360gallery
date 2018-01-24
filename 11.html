@@ -1,10 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="fb360.index" %>
+﻿<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
-<!DOCTYPE html>
+<head>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-     <!--- basic page needs
+    <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
     <title>Glint</title>
@@ -32,9 +35,9 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
-<body>
-    <form id="form1" runat="server">
-   
+
+<body id="top">
+
     <!-- header
     ================================================== -->
     <header class="s-header">
@@ -114,8 +117,7 @@
                 </h1>
 
                 <div class="home-content__buttons">
-                       <asp:ImageButton ID="imgFaceBook" AlternateText="login" ImageUrl="~/img/fbLogin.jpg"
-            runat="server" OnClick="ShareImage"></asp:ImageButton>
+
                    
                     <!--<a href="#about" class="smoothscroll btn btn--stroke">
                         More About Us
@@ -219,51 +221,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-        <script type="text/javascript">
-    $(function () {
-        var info = $(".info");
-        $(".picture").bind("mouseenter", function () {
-            var p = GetScreenCordinates(this);
-            $("input", info).attr("rel", this.src);
-            info.show();
-            info.css("height", $(this)[0].offsetHeight / 2);
-            info.css("width", $(this).width());
-            info.css({ "left": p.x, "top": p.y + this.offsetHeight - info[0].offsetHeight });
-        });
-        $(".info a, .info").bind("mouseenter, mousemove, mouseover", function () {
-            info.show();
-        });
-        $(".picture").bind("mouseleave", function () {
-            info.hide();
-        });
-        $("[id*=imgFaceBook]").bind("click", function () {
-            if (this.alt == "login") {
-                window.open("index.aspx?login=1", "LoginPopup", "width=550,height=300,resizable=1");
-                return false;
-            }
-            var hidden = $("<input name = 'image_url' type = 'hidden' />");
-            hidden.val($(this).attr("rel"));
-            $("form").append(hidden);
-        });
-    });
 
-    function GetScreenCordinates(obj) {
-        var p = {};
-        p.x = obj.offsetLeft;
-        p.y = obj.offsetTop;
-        while (obj.offsetParent) {
-            p.x = p.x + obj.offsetParent.offsetLeft;
-            p.y = p.y + obj.offsetParent.offsetTop;
-            if (obj == document.getElementsByTagName("body")[0]) {
-                break;
-            }
-            else {
-                obj = obj.offsetParent;
-            }
-        }
-        return p;
-    }
-</script>
-    </form>
 </body>
+
 </html>
