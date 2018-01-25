@@ -28,6 +28,6 @@ public partial class CS : System.Web.UI.Page
     {
         Session["File"] = FileUpload1.PostedFile;
         Session["Message"] = txtMessage.Text;
-        FaceBookConnect.Authorize("user_photos", "http%3A%2F%2Ffacebook360gallery.apphb.com%2F");
+        FaceBookConnect.Authorize("user_photos", "http://facebook360gallery.apphb.com/");
     }
 }
