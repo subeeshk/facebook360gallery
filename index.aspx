@@ -82,21 +82,8 @@
 
             </div>
 
-            <div class="home-content__scroll">
-                <a href="#about" class="scroll-link smoothscroll">
-                    <span>Scroll Down</span>
-                </a>
-            </div>
-
-            <div class="home-content__line"></div>
-
-        </div> <!-- end home-content -->
-
-
-        <ul class="home-social">
-            <li>
-               
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <div class="footer-bottom">
+               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- facebook 360 gallery -->
 <ins class="adsbygoogle"
      style="display:block"
@@ -106,9 +93,14 @@
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-            </li>
-            
-        </ul> 
+            </div>
+
+          
+
+        </div> <!-- end home-content -->
+
+
+    
         <!-- end home-social -->
 
     </section> <!-- end s-home -->
