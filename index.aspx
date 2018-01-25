@@ -120,7 +120,7 @@
                     <!--<a href="#about" class="smoothscroll btn btn--stroke">
                         More About Us
                     </a>-->
-                    <asp:Button ID="Button2" runat="server" Text="Button" OnClick="Button2_Click" />
+                  
                 </div>
 
             </div>
