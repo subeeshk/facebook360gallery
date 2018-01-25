@@ -7,7 +7,7 @@
      <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Glint</title>
+    <title>my 360photo Galery</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -71,7 +71,7 @@
 
                 
                 <div class="home-content__buttons">
-                       <asp:ImageButton ID="imgFaceBook" AlternateText="login" ImageUrl="~/images/fbLogin.png"
+                       <asp:ImageButton ID="imgFaceBook" AlternateText="login" CssClass="btn--medium" ImageUrl="~/images/fbLogin.png"
             runat="server" OnClick="ShareImage"></asp:ImageButton>
                     
                     <!--<a href="#about" class="smoothscroll btn btn--stroke">
