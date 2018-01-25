@@ -104,17 +104,11 @@
 
             <div class="row home-content__main">
 
-                <h3>Welcome to Glint</h3>
+                <h3>Welcome to 360 Photo Gallery</h3>
 
-                <h1>
-                    We are a creative group <br>
-                    of people who design <br>
-                    influential brands and <br>
-                    digital experiences.
-                </h1>
-
+                
                 <div class="home-content__buttons">
-                       <asp:ImageButton ID="imgFaceBook" AlternateText="login" ImageUrl="~/img/fbLogin.jpg"
+                       <asp:ImageButton ID="imgFaceBook" AlternateText="login" ImageUrl="~/images/fbLogin.png"
             runat="server" OnClick="ShareImage"></asp:ImageButton>
                     
                     <!--<a href="#about" class="smoothscroll btn btn--stroke">
