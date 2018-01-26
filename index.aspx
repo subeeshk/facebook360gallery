@@ -76,6 +76,11 @@
         <div class="home-content">
 
             <div class="row home-content__main">
+                <meta property="fb:app_id" content="4735" />  // Your APP ID
+  <meta property="og:type"   content="myapp:falafeel" /> // YourAppName:Action Type 
+  <meta property="og:url"    content="http://demo.anything.net/buy.aspx" /> 
+  <meta property="og:title"  content="Chicken Lawa Falafeel" /> 
+  <meta property="og:image"  content="http://www.theappdynamics.com/images/babafooka.jpg" /> 
 
                 <h3>Welcome to 360 Photo Gallery</h3>
 
