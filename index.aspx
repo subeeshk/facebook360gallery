@@ -4,6 +4,17 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta property="fb:app_id" content="1412197185517246">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Make your 360 Photo Gallery">
+    <meta property="og:site_name" content="facebook360gallery">
+    <meta property="og:url" content="http://facebook360gallery.apphb.com">
+    <meta property="og:image" content="https://www.androidcentral.com/sites/androidcentral.com/files/styles/large/public/topic_images/2016/photosphere-topic.png">
+    <meta property="article:author" content="https://www.facebook.com/360Gallery-Community-576539799358104">
+
+
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113059173-1"></script>
 <script>
@@ -18,8 +29,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <title>my 360photo Galery</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+ 
 
     <!-- mobile specific metas
     ================================================== -->
