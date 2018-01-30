@@ -14,7 +14,43 @@
 
 
 
+    <script type="text/javascript">
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '1412197185517246',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v2.11'
+            });
+        };
 
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+  function share_me() {
+    FB.ui({
+      method: 'feed',
+      app_id: '1412197185517246',
+      link: 'http://facebook360gallery.apphb.com/',
+      
+      name: '360 Photo Gallery',
+      caption: 'Make Your 360 Photo Gallery',
+      description: 'Make Your 360 Photo Gallery'
+    },
+    function(response){
+      if(response && response.post_id) {
+          self.location.href = 'http://facebook360gallery.apphb.com?shr=1'
+      }
+      else {
+          self.location.href = 'http://facebook360gallery.apphb.com?shr=0'
+      }
+    });
+  }
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113059173-1"></script>
 <script>
@@ -93,10 +129,11 @@
                 <div class="home-content__buttons">
                        <asp:ImageButton ID="imgFaceBook" AlternateText="login" CssClass="btn--medium" ImageUrl="~/images/fbLogin.png"
             runat="server" OnClick="ShareImage"></asp:ImageButton>
+                    <asp:Panel ID="Panel1" runat="server" Visible="false">
+                        <iframe width="100px" height="100px" src="panoview.aspx"></iframe>
+                         <button onclick="share_me()">Share</button>
+                    </asp:Panel>
                     
-                    <!--<a href="#about" class="smoothscroll btn btn--stroke">
-                        More About Us
-                    </a>-->
                   
                 </div>
 
