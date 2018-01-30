@@ -861,7 +861,7 @@ input[type="button"].btn--primary:focus {
 }
 
 .btn--medium, button.btn--medium {
-    height: 5.7rem !important;
+    cursor: pointer;
     line-height: calc(5.7rem - .4rem) !important;
 }
 
