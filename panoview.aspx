@@ -5,6 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel="stylesheet" href="css/main.css">
    	<style>
 		body {
 			font-family: Monospace;
