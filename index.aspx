@@ -59,7 +59,7 @@
     ================================================== -->
     <header class="s-header">
 
-<%--       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- facebook 360 gallery -->
 <ins class="adsbygoogle"
      style="display:block"
@@ -68,7 +68,7 @@
      data-ad-format="auto"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
-</script>--%>
+</script>
 
       
 
@@ -102,7 +102,7 @@
 
             </div>
 
-            <%--<div class="footer-bottom">
+            <div class="footer-bottom">
                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- facebook 360 gallery -->
 <ins class="adsbygoogle"
@@ -113,7 +113,7 @@
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-            </div>--%>
+            </div>
 
           
 
@@ -231,6 +231,7 @@
             }
         }
         return p;
+        
     }
 </script>
     </form>
