@@ -91,8 +91,8 @@
 
                 
                 <div class="home-content__buttons">
-                       <asp:ImageButton ID="imgFaceBook" AlternateText="login" CssClass="btn--medium" ImageUrl="~/images/fbLogin.png"
-            runat="server" OnClick="ShareImage"></asp:ImageButton>
+               <a href="#">       <asp:ImageButton ID="imgFaceBook" AlternateText="login" CssClass="btn--medium" ImageUrl="~/images/fbLogin.png"
+            runat="server" OnClick="ShareImage"></asp:ImageButton></a> 
                     
                     <!--<a href="#about" class="smoothscroll btn btn--stroke">
                         More About Us
