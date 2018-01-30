@@ -17,6 +17,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
+
+        <asp:HiddenField ID="HiddenField1" runat="server" />
    <script src="js/three.min.js"></script>
 	<script src="js/OrbitControls.js"></script>
 	<script src="js/EquirectangularToCubemap.js"></script>
@@ -63,7 +65,7 @@ function FBShareOp(){
 
 </script>
 	<script>
-
+	    var imagexx = document.getElementById('<%=HiddenField1.ClientID%>').value;
 		var container;
 		var camera, scene, renderer;
 		var mesh, mesh2, sphere;
@@ -95,7 +97,7 @@ function FBShareOp(){
 			controls.enableZoom = false;
 
 			var loader = new THREE.TextureLoader();
-			loader.load('images/AQDI40C5kI.jpg', function (res) {
+			loader.load('images/' + imagexx + '.jpg', function (res) {
 
 				var equiToCube = new EquirectangularToCubemap( renderer );
 
